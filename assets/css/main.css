@@ -1990,8 +1990,8 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 /* Pricing Ticket */
 #pricing {
-  background: url(../img/background/bg-pricing.jpg);
-  background-attachment: fixed;
+  background: url('../img/background/bg-pricing.jpg') no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the entire container */
   overflow: hidden;
   position: relative;
 }
