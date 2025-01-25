@@ -2217,3 +2217,60 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #fff;
   border-color: #fff;
 }
+
+
+/* Styles pour les différentes catégories de sessions */
+
+/* Keynote */
+.card.keynote .card-header {
+  background-color: #e0f7fa; /* Bleu clair */
+  color: #044A44; /* Texte bleu foncé pour contraste */
+}
+
+/* Panel */
+.card.panel .card-header {
+  background-color: #E7A535; /* Orange clair */
+  color: #e65100; /* Texte orange foncé pour contraste */
+}
+
+/* Pause */
+.card.pause .card-header {
+  background-color: #F2F2F2; /* Gris très clair */
+  color: #424242; /* Texte gris foncé */
+}
+
+/* Atelier */
+.card.atelier .card-header {
+  background-color: #e8f5e9; /* Vert très clair */
+  color: #044A44; /* Texte vert foncé */
+}
+
+/* Excursion */
+.card.excursion .card-header {
+  background-color: #E7A535; /* Violet très clair */
+  color: #512da8; /* Texte violet foncé */
+}
+
+/* Exposition */
+.card.exposition .card-header {
+  background-color: #fce4ec; /* Rose très clair */
+  color: #880e4f; /* Texte rose foncé */
+}
+
+/* Styles généraux pour les card-header */
+.card-header {
+  font-weight: bold;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Styles généraux pour les card-body */
+.card-body {
+  padding: 15px;
+  background-color: #ffffff; /* Fond blanc pour les contenus */
+}
+
+/* Optionnel : Ajouter des transitions pour une meilleure expérience utilisateur */
+.card-header {
+  transition: background-color 0.3s ease;
+}
