@@ -1589,6 +1589,21 @@
   <script src="../assets/js/jquery.slicknav.js"></script>
   <script src="../assets/js/nivo-lightbox.js"></script>
   <script src="../assets/js/main.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const healthResponse = await fetch('https://afriquebitcoin-invoices-generation.onrender.com/healthz');
+        if (!healthResponse.ok) {
+          console.error("Health check failed with status:", healthResponse.status);
+        } else {
+          const healthData = await healthResponse.text();
+          console.log("Health check success:", healthData);
+        }
+      } catch (error) {
+        console.error("Error during health check:", error);
+      }
+    });
+  </script>
 </body>
 
 </html>
